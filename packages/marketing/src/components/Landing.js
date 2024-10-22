@@ -10,6 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import MaterialLink from '@material-ui/core/Link';
 import { Link } from 'react-router-dom';
+import CSRSuspense from './CSRSuspense'
 
 function Copyright() {
   return (
@@ -69,6 +70,7 @@ export default function Album() {
   return (
     <React.Fragment>
       <main>
+        <CSRSuspense />
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
@@ -79,7 +81,7 @@ export default function Album() {
               color="textPrimary"
               gutterBottom
             >
-              Home Page
+              Home Pagee sushma
             </Typography>
             <Typography
               variant="h5"

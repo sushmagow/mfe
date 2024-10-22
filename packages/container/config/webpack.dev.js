@@ -19,7 +19,13 @@ const devConfig = {
             },
             shared: packageJson.dependencies
         })
-    ]
+    ],
+    resolve: {
+        alias: {
+            'react-native$': 'react-native-web'
+          },
+        extensions: ['', '.js', '.jsx']
+    }
 };
 
 module.exports = merge(commonConfig, devConfig);
